@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+
+
+<html>
+<head>
+
+    <meta charset="UTF-8">
+    <title>Selenium</title>
+    <style>
+  /* Style the element with the id "myHeader" */
+  /* For Beautification : CSS
+  # means id
+  . means class
+  */
+  #name{
+   background: coral;
+   border-right-color: blue;
+   child-align: left;
+  }
+
+  .st{
+   backface-visibility: inherit;
+   height: auto;
+   image-rendering: optimizeQuality;
+
+  }
+
+  #myHeader {
+   background-color: lightblue;
+   color: black;
+   padding: 40px;
+   text-align: center;
+  }
+
+  /* Style all elements with the class name "city" */
+  .city {
+   background-color: tomato;
+   color: white;
+   padding: 10px;
+  }
+ </style>
+    <script>
+  function allowDrop(ev) {
+   ev.preventDefault();
+  }
+
+  function drag(ev) {
+   ev.dataTransfer.setData("text", ev.target.id);
+  }
+
+  function drop(ev) {
+   ev.preventDefault();
+   var data = ev.dataTransfer.getData("text");
+   ev.target.appendChild(document.getElementById(data));
+  }
+ </script>
+
+</head>
+
+<body>
+
+<h1>We are Learning Selenium</h1>
+
+
+<h2>   Value of the Tag    </h2>
+
+<select>
+    <option class="st">Coffee</option>
+    <option id="name">pizza</option>
+    <option>tea</option>
+    <option>burger</option>
+    <option>cake</option>
+    <option>chicken Nugget</option>
+</select>
+
+
+
+
+<img src="../Html5/img/s1.jpeg" height="300" width="300">
+
+
+<button type="button">Click Here</button>
+type is a Attribute
+"button" value of the attribute
+
+<ul style="list-style-type:square;">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+</ul>
+<h1 style="background-color:DodgerBlue;">Hello World</h1>
+<p style="background-color:Tomato;">Lorem ipsum...</p>
+
+<h1 style="border:2px solid Tomato;">Hello World</h1>
+<h1 style="border:2px solid DodgerBlue;">Hello World</h1>
+<h1 style="border:2px solid Violet;">Hello World</h1>
+
+
+<table style="width:100%">
+    <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Age</th>
+    </tr>
+    <tr>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+    </tr>
+    <tr>
+        <td>Eve</td>
+        <td>Jackson</td>
+        <td>94</td>
+    </tr>
+
+</table>
+
+<br>
+<h1 id="myHeader">My Header</h1>
+<h1 name="firstName">Fahim</h1>
+<h1 class="city">Queens</h1>
+
+
+
+<form>First name:<br>
+    <input type="text" name="firstname"><br>
+    Last name:<br>
+    <input type="text" name="lastname">
+</form>
+
+<br>
+
+<form>
+    <input type="radio" name="gender" value="male" checked> Male<br>
+    <input type="radio" name="gender" value="female"> Female<br>
+    <input type="radio" name="gender" value="other"> Other
+</form>
+<br>
+
+<form action="/action_page.php">
+    First name:<br>
+    <input type="text" name="firstname" value="Mickey"><br>
+    Last name:<br>
+    <input type="text" name="lastname" value="Mouse"><br><br>
+    <input type="submit" value="Submit">
+</form>
+
+<br>
+<select name="cars" size="4" multiple>
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="fiat">Fiat</option>
+    <option value="audi">Audi</option>
+</select>
+
+<br>
+<textarea name="message" rows="10" cols="30">
+The cat was playing in the garden.The cat was playing in the garden.The cat was playing in the garden.
+
+</textarea>
+
+<br>
+<button type="button" onclick="alert('Selenium Alert')">Click Me!</button>
+
+<br>
+<iframe width="420" height="315"
+        src="https://www.youtube.com/embed/tgbNymZ7vqY">
+</iframe>
+
+<br>
+<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+<img id="drag1" src="../Html5/img/s1.jpeg" draggable="true" ondragstart="drag(event)" width="336" height="69">
+
+</body>
+// 8 type of locator in selenium
+// id :
+// name:
+// className
+
+
+
+
+
+</html>

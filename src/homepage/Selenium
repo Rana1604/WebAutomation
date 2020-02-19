@@ -1,0 +1,60 @@
+
+
+1. What is Selenium?
+Selenium supports...... browsers
+
+
+Domain ?
+Explain ......
+
+
+
+2. Setting up Selenium environment in your local machine.
+# create project
+# create Directory BrowserDriver and lib
+# create git_ignore file and put the file in it which you do not push to gitHub.
+
+
+
+# Download selenium webdriver for java
+#Copy the jar files of Selenium and paste it into lib.
+# Add the jar file throw module Dependency in intellij
+
+# Download browserDriver both for windows and mac ----Why?
+# Copy the browserDriver and paste it into your browserDriver Directory in intellij.
+
+================================
+What is method ? How it works ? Think like in real world....
+================================
+
+
+3. How to open a browser by java?
+Set
+System.setProperty(chromeWebDriver,chromeWebDriverPath);
+driver=new ChromeDriver();
+driver.get(url);
+
+two methods of nevigation ---- driver.get(url);
+---- driver.nevigate().to(url);
+
+by 2nd one we can go back to the previous page
+driver.nevigate().back();
+
+
+// ChromeDriver have a method Named get() that can take a url and nevigate.
+
+driver.findElement(By.xpath(path)).click();
+sendkeys();
+
+----- how many ways can we find element?
+----- how many mathods in selenium and what about it functionality?
+
+
+
+4. Html path --- locator---8 types
+we need to find out unique value for locator..why?
+
+
+
+
+5. throws InterruptedException for Thread.sleep(3000); why ?
